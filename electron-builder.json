@@ -1,0 +1,16 @@
+{
+  "appId": "com.tqcss.resource-owl",
+  "files": ["dist-electron", "dist-react"],
+  "icon": "./public/desktop-icon.png",
+
+  "mac": {
+    "target": "dmg"
+  },
+  "linux": {
+    "target": "AppImage",
+    "category": "Utility"
+  },
+  "win": {
+    "target": ["portable", "msi"]
+  }
+}
