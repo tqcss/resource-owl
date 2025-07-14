@@ -10,12 +10,12 @@
     "dev:electron": "npm run build:electron && cross-env NODE_ENV=development electron .",
     "build:react": "tsc -b && vite build",
     "build:electron": "tsc --project tsconfig.electron.json",
-    "build:app": "npm run build:react && build:electron",
+    "build:app": "npm run build:react && npm run build:electron",
     "lint": "eslint .",
     "preview": "vite preview",
-    "dist:win": "build:app && electron-builder --win --x64",
-    "dist:linux": "build:app && electron-builder --linux --x64",
-    "dist:mac": "build:app && electron-builder --mac --arm64"
+    "dist:win": "npm run build:app && electron-builder --win --x64",
+    "dist:linux": "npm run build:app && electron-builder --linux --x64",
+    "dist:mac": "npm run build:app && electron-builder --mac --arm64"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
