@@ -2,6 +2,7 @@
   "appId": "com.tqcss.resource-owl",
   "files": ["dist-electron", "dist-react"],
   "icon": "./public/desktop-icon.png",
+  "extraResources": ["dist-electron/preload.cjs"],
 
   "mac": {
     "target": "dmg"
