@@ -7,7 +7,7 @@ function App() {
   const [count, setCount] = useState(0)
 
   // @ts-ignore
-  window.electron.getStaticData();
+  window.electron.getSystemData();
 
   return (
     <>

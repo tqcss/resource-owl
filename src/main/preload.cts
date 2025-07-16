@@ -5,5 +5,3 @@ electron.contextBridge.exposeInMainWorld("electron", {
   subscribeStatistics: (callback: (statistics: any) => void) => callback({}),
   getSystemData: () => console.log("static"),
 });
-
-console.log("working");
