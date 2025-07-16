@@ -3,7 +3,7 @@ const MEGABYTES_IN_GIGABYTE: number = 1_000;
 const MEBIBYTES_IN_GIBIBYTE: number = 1_024;
 
 export const isDev = (): boolean => {
-  return process.env.NODE_ENV === "developnent";
+  return process.env.NODE_ENV === "development";
 };
 
 export const byteToGigabyte = (bytes: number): number => {
